@@ -12,5 +12,6 @@ public interface ContatoRepository {
 
     List<Contato> findAll();
 
+    Contato update(long id, Contato contatoAtualizado);
 
 }

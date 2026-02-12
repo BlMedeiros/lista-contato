@@ -1,18 +1,21 @@
 package com.lista_contatos.contato.model;
 
 
+import com.lista_contatos.contato.model.vo.Nome;
+import com.lista_contatos.contato.model.vo.Numero;
+
 public class Contato {
     private long id;
-    private String nome;
-    private long numero;
+    private Nome nome;
+    private Numero numero;
 
-    public Contato(long id, String nome, long numero) {
+    public Contato(long id, Nome nome, Numero numero) {
         this.id = id;
         this.nome = nome;
         this.numero = numero;
     }
 
-    public Contato(String nome, long numero) {
+    public Contato(Nome nome, Numero numero) {
         this.nome = nome;
         this.numero = numero;
     }
@@ -25,19 +28,19 @@ public class Contato {
         this.id = id;
     }
 
-    public String getNome() {
+    public Nome getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
+    public void setNome(Nome nome) {
         this.nome = nome;
     }
 
-    public long getNumero() {
+    public Numero getNumero() {
         return numero;
     }
 
-    public void setNumero(long numero) {
+    public void setNumero(Numero numero) {
         this.numero = numero;
     }
 }
